@@ -1,0 +1,55 @@
+
+
+.Header
+{
+    height: 150px;
+    width: 100%;
+    display: inline-block;
+
+}
+
+.box1{
+    height: 150px;
+    width: 60%;
+    display: inline-block;
+    position: relative;
+    left: 100px;
+}
+.box2{
+    height: 200px;
+    width: 25%;
+    display: inline-block;
+    text-align:center;
+    background-image: url('https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQjpN1_zLJ8Lde4JLC1ru_54XZs2l-ohTNSh_rDxGqHXu14n9sMW-1Q86Exwoanlgsavf2uSlhM8RjR9XFWqeXxqLwqNPUGK-LWNuJN4ma87Pl3gJ4dwmjajw&usqp=CAE');
+    background-size:55%;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 40px;
+    top: 35px;
+    left: 35px;
+}
+
+.Headtext
+{
+    text-align:center;
+}
+
+.headline
+{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(223, 217, 209);
+    text-align: center;
+ 
+}
+
+.box1
+{
+    margin: 20px;
+}
+
+.form-control
+{
+    display: inline-block;
+}
+

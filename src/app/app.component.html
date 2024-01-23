@@ -1,0 +1,94 @@
+
+<div class="Header">
+  <div class="box1">
+    <h1 class="Headtext" style="color: rebeccapurple;">Contact Our</h1>
+    <h1 class="Headtext">Customer Support Center</h1>
+  </div>
+  <div class="box2"></div>
+  <div class="headline">
+    <p style="position: relative; top: 15px; font-size: 29px;">Contact Information</p>
+    <p style="font-size: 19px;">Please fill out your contact information below</p>
+  </div>
+</div>
+
+
+<br><br><br>
+
+<form  [formGroup] = "MarvellousForm">
+  <!-- <small [class.d-none]="MarvellousForm.get('firstName')?.valid" class="text-danger" style="position:relative; top:30px; left: 50px; z-index: 999; margin-top: 50px;">First Name is required</small> -->
+
+<label style="position: relative; left: 50px; margin-bottom: 10px;"> Name</label>
+<br>
+<input  class="form-control" placeholder="First Name" style="width: 45%; position: relative; left: 50px;" formControlName="firstName" [class.is-invalid] = "MarvellousForm.get('firstName')?.invalid && MarvellousForm.get('lastName')?.touched">
+
+
+
+<input [class.is-invalid] = "MarvellousForm.get('lastName')?.invalid && MarvellousForm.get('lastName')?.touched" class="form-control" placeholder="Last Name" style="width: 45%; position: relative; left: 75px;" formControlName="lastName" >
+
+
+<br><br>
+<label style="position: relative; left: 50px; margin-bottom: 10px;"> Email</label>
+<br>
+<input [class.is-invalid] = "MarvellousForm.get('email')?.invalid && MarvellousForm.get('email')?.touched" class="form-control" placeholder="abc@gmail.com" style="width: 91.6%; position: relative; left: 50px;" formControlName="email" type="email" >
+
+<br><br>
+<label style="position: relative; left: 50px; margin-bottom: 10px;"> Phone</label>
+<br>
+<input [class.is-invalid] = "MarvellousForm.get('phone')?.invalid && MarvellousForm.get('phone')?.touched" class="form-control" placeholder="Contact Number" style="width: 91.6%; position: relative; left: 50px;" formControlName="phone" >
+
+
+
+
+
+<br><br>
+<label style="position: relative; left: 50px; margin-bottom: 10px;">  Address</label>
+<br>
+<input [class.is-invalid] = "MarvellousForm.get('Address')?.invalid && MarvellousForm.get('Address')?.touched" class="form-control" placeholder="Address (20 Words Min)" style="width: 91.6%; position: relative; left: 50px;" formControlName="Address" >
+
+<br><br>
+
+<input [class.is-invalid] = "MarvellousForm.get('City')?.invalid && MarvellousForm.get('City')?.touched" class="form-control" placeholder="City" style="width: 45%; position: relative; left: 50px;" formControlName="City" >
+
+
+
+<input [class.is-invalid] = "MarvellousForm.get('zip')?.invalid && MarvellousForm.get('zip')?.touched" class="form-control" placeholder="Zip Code" style="width: 45%; position: relative; left: 75px;" formControlName="zip" >
+
+
+<br><br>
+
+
+<input [class.is-invalid] = "MarvellousForm.get('state')?.invalid && MarvellousForm.get('state')?.touched" [(ngModel)]="selected"
+       [typeahead]="states"
+       class="form-control" formControlName="state" placeholder="State" style="width: 91.6%; position: relative; left: 50px;">
+
+       <br><br>
+
+<label style="position: relative; left: 50px; margin-bottom: 10px;">  Comments(30 Words Min)</label>
+<br>
+<input [class.is-invalid] = "MarvellousForm.get('comments')?.invalid && MarvellousForm.get('comments')?.touched" class="form-control" style="width: 91.6%; position: relative; left: 50px; height: 100px;" formControlName="comments" >       
+
+</form>
+
+
+<br><br>
+<button type="button" class="btn btn-primary" style="height: 40px; width: 140px; position: relative; left: 45%; text-align: center; border-radius: 40px;" >
+Submit</button>
+<br><br><br><br>
+
+
+<!-- <br><br><br>
+
+<div class="btn-group" dropdown>
+  <button id="button-animated" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
+          aria-controls="dropdown-animated">
+    Button dropdown <span class="caret"></span>
+  </button>
+  <ul id="dropdown-animated" *dropdownMenu class="dropdown-menu"
+      role="menu" aria-labelledby="button-animated">
+    <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+    <li role="menuitem"><a class="dropdown-item" href="#">Another action</a>
+    </li>
+    <li role="menuitem"><a class="dropdown-item" href="#">Something else
+      here</a></li>
+  </ul>
+</div> -->
